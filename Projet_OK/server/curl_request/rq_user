@@ -1,0 +1,15 @@
+User:
+	
+	Création: curl -v -X POST -H "Content-Type: application/json" -d '{"login":"pikachu","password":"1234", "lastname":"chu", "firstname":"pika","pseudo":"pkm91","age":"23","birthday":"28/05/1997"}' http://localhost:4001/api/user
+
+	Get by id: curl http://localhost:4001/api/user/1
+
+	Delete by id: curl -X DELETE http://localhost:4001/api/user/1
+
+	Update by id: curl -X PUT -H "Content-Type: application/json" -d '{"login":"david","password":"1234", "lastname":"chu", "firstname":"pika", "pseudo":"pkm91", "age":"23", "birthday":"28/05/1997"}'  http://localhost:4001/api/user/1
+
+Friend:
+	
+	Création d'une amitié: curl -v -X POST -H "Content-Type: application/json" -d '{"user_id":"1", "friend_id":"2", "pseudo":"carapuce"}'   http://lopiFriend/friend
+
+	Get friend from user: http://localhost:4001/api/apiFriend/1

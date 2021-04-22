@@ -1,0 +1,200 @@
+.App {
+  /*text-align: center;*/
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body{
+  background: url("styles/blue-brick-wall-chair-1282315.jpg");
+}
+
+.content{
+  background: rgba(240,240,240, 0.7);
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.tweet-container {
+  background: white;
+  min-height: 70px;
+  padding: 8px;
+  margin: auto;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+
+
+}
+
+.center{
+  display: flex;
+  background-image: url("styles/background.png");
+  height: 100vh;
+  background-size: cover;
+}
+
+#login{
+  text-align: center;
+  margin: auto;
+  
+}
+#login input[type='text'],#login input[type='password'] {
+  width:350px;
+  height:30px;
+  margin-top: 15px;
+  background: rgba(240,240,240, 0.7);
+  border: none;
+}
+
+
+button{
+  margin-top: 15px;
+  width:130px;
+  height:30px;
+  vertical-align: top;
+  border:none;
+  margin-right: 5px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+
+}
+
+#banniere{
+  background:url("styles/astronomy-cosmos-dark-733475.jpg");
+  color:white;
+}
+
+.alignement{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#informations{
+  margin:auto;
+  width: 50%;  
+  text-align: center;
+}
+
+#deconnexion{
+  margin-left: auto;
+  width: 25%;
+  text-align: right;
+  padding-left: 5%;
+}
+
+#tweetwall{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.container{
+  width: 50%;
+  max-height: 55vh;
+  overflow: auto;
+  margin:auto;
+  
+}
+
+.addT input{
+  width: 350px;
+  height: 30px;
+  border:none;
+}
+
+.addT input[type='submit']{
+  width: 120px;
+  height: 30px;
+  border:none;
+  color: white;
+  background:#007acc;
+  margin-top:10px;
+  margin-bottom:10px;
+
+}
+
+#logo{
+  width:80px;
+  height: 80px;
+  background: url('styles/icon.png');
+  background-size: cover; 
+}
+
+#push{
+  width:70%;
+}
+
+#profil .alignement{
+  text-align: center;
+  width: 50vw;
+  height: 56vh;
+  display: inline-flex;
+}
+
+.centre{
+  margin:auto;
+
+}
+
+#profilA{
+  background: rgb(247,247,247)
+}
+#profilB{
+  background: rgb(240,240,240);
+}
+
+#centrelogo{
+  margin: auto;
+  text-align: center;
+}
+
+#centrelogo #logo{
+  margin:auto;
+}
+ 
+
+
+.container2{
+  width: 70%;
+  max-height: 55vh;
+  overflow: auto;
+  margin:auto;
+  
+}
+
+#champs{
+    margin-top:50px;
+    border: none;
+    text-align:center;
+    
+  }
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

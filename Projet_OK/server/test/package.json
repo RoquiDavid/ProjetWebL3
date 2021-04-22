@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testBD.js",
+  "scripts": {
+    "test": "mocha testusers"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "1_1.C": "cpp",
+        "ratio": "cpp",
+        "system_error": "cpp",
+        "math.h": "c",
+        "*.tcc": "c"
+    }
+}

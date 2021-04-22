@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS `mydb`.`user` (
+  `idtable1` INT NOT NULL,
+  `login` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  `lastname` VARCHAR(45) NULL,
+  `pseudo` VARCHAR(45) NULL,
+  `age` VARCHAR(45) NULL,
+  `birthday` VARCHAR(45) NULL,
+  PRIMARY KEY (`idtable1`))
+
+
+CREATE TABLE IF NOT EXISTS `mydb`.`friends` (
+  `user_id` INT NOT NULL,
+  `table1_idtable11` INT NOT NULL,
+  PRIMARY KEY (`user_id`, `table1_idtable11`),
+  INDEX `fk_table1_has_table1_table11_idx` (`table1_idtable11` ASC) VISIBLE,
+  INDEX `fk_table1_has_table1_table1_idx` (`user_id` ASC) VISIBLE,
+  CONSTRAINT `fk_table1_has_table1_table1`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `mydb`.`user` (`idtable1`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_table1_has_table1_table11`
+    FOREIGN KEY (`table1_idtable11`)
+    REFERENCES `mydb`.`user` (`idtable1`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
